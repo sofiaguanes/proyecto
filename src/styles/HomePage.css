@@ -1,0 +1,89 @@
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(135deg, #000, #003300);
+  position: relative;
+}
+
+.main-title {
+  font-size: 5em;
+  color: #00ff00;
+  animation: blink-animation 5s infinite;
+  text-align: center;
+  margin-right: 60px;
+}
+
+.main-title h1 {
+  margin: 0;
+}
+
+.subtitle-container {
+  border: 2px solid #00ff00;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  width: 400px; 
+  height: 400px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle-container h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #00ff00;
+}
+
+.floating-button {
+  background-color: #00ff00;
+  color: #000;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+  position: absolute;
+  animation: float 10s linear infinite;
+}
+
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+  25% {
+    top: 10%;
+    left: 80%;
+  }
+  50% {
+    top: 80%;
+    left: 80%;
+  }
+  75% {
+    top: 80%;
+    left: 10%;
+  }
+  100% {
+    top: 10%;
+    left: 10%;
+  }
+}

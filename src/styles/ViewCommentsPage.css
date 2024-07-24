@@ -1,0 +1,73 @@
+.view-comments-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 100vh;
+    color: #00ff00;
+    padding: 20px;
+}
+
+.code-container, .comments-container {
+    background: #000;
+    border: 2px solid #00ff00;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00;
+    box-sizing: border-box; /* Asegura que el padding no cause overflow */
+}
+
+.code-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.code-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.code-actions button, .comments-container button {
+    background: #00ff00;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.code-actions button:hover, .comments-container button:hover {
+    background: #007700;
+}
+
+.comment {
+    background: #111;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.comment p {
+    margin: 0;
+}
+
+/* Nueva regla para textarea */
+textarea {
+    width: 100%; /* Asegura que el textarea ocupe todo el ancho del container */
+    max-width: 100%; /* Prevenir que se expanda más allá del container */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho */
+    resize: vertical; /* Permitir solo redimensionamiento vertical */
+    padding: 10px;
+    background: #111;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    border-radius: 5px;
+    margin-top: 20px;
+}

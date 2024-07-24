@@ -1,0 +1,30 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/ExploreCodesPage.css';
+
+const exampleCodes = [
+  { id: 1, title: 'Code Example 1', code: 'console.log("Hello, world!");' },
+  { id: 2, title: 'Code Example 2', code: 'const a = 10; const b = 20; console.log(a + b);' },
+  { id: 3, title: 'Code Example 3', code: 'function greet(name) { return `Hello, ${name}!`; }' },
+  { id: 4, title: 'Code Example 4', code: 'const multiply = (x, y) => x * y;' },
+  { id: 5, title: 'Code Example 5', code: 'const nums = [1, 2, 3, 4]; console.log(nums.map(n => n * 2));' },
+];
+
+const ExploreCodesPage = () => {
+  return (
+    <div className="explore-codes-page">
+      <h1>Explore Codes</h1>
+      <div className="codes-container">
+        {exampleCodes.map((code) => (
+          <div key={code.id} className="code-item">
+            <Link to={`/explore-code/${code.id}`}>
+              <h2>{code.title}</h2>
+            </Link>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default ExploreCodesPage;

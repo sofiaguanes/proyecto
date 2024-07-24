@@ -1,0 +1,37 @@
+.explore-codes-page {
+    padding: 20px;
+    color: #00ff00;
+  }
+  
+  .explore-codes-page h1 {
+    color: #00ff00;
+    text-align: center;
+  }
+  
+  .codes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .code-item {
+    background: #000;
+    border: 1px solid #00ff00;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  .code-item h2 {
+    color: #00ff00;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
